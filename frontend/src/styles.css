@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fb;
+  color: #1d2433;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.app-shell {
+  display: flex;
+  min-height: 100vh;
+}
+
+.app-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #f5f7fb;
+}
+
+.page-area {
+  padding: 2rem;
+  flex: 1;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.tip-card {
+  background: #eef2ff;
+  border-radius: 12px;
+  padding: 1rem;
+  max-width: 300px;
+}
+
+.tip-label {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: #64748b;
+  margin: 0 0 0.4rem;
+}
+
+.card-grid {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.forms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.panel {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid #e2e8f0;
+}
+
+.grid-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.grid-form input,
+.grid-form select,
+.auth-form input,
+.auth-form select {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.3rem;
+  border-radius: 6px;
+  border: 1px solid #cbd5f5;
+}
+
+.grid-form button,
+.auth-form button,
+.panel button {
+  border: none;
+  background: #2563eb;
+  color: #fff;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+}
+
+.reminder-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.status-banner {
+  background: #ecfccb;
+  color: #3f6212;
+  padding: 0.8rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background: linear-gradient(120deg, #eaeeff, #fef3c7);
+}
+
+.auth-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 14px;
+  max-width: 420px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.auth-error {
+  color: #dc2626;
+  margin: 0.5rem 0;
+}
+
+.auth-subtitle {
+  color: #64748b;
+  margin-top: 0;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.muted-label {
+  color: #94a3b8;
+  font-size: 0.85rem;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.info-card {
+  padding: 1rem;
+  border-radius: 10px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+
